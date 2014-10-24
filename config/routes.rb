@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   root 'hello#index'
 
 
-  resources :tutorials
+  resources :tutorials do
+    resources :steps
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
