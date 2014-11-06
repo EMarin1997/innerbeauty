@@ -8,7 +8,6 @@ class TutorialsController < ApplicationController
 
 	def create
 		@tutorial = Tutorial.new(tutorial_params)
-
 		@tutorial.save
 		redirect_to @tutorial
 	end
